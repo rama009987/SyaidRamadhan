@@ -160,28 +160,35 @@ object-fit:cover;
 padding:20px;
 }
     
-.achievement-container{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+.achievement-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* Kalau layar kecil otomatis turun */
+    margin-top: 30px;
 }
 
-.achievement-card{
-    width:220px; /* Sebelumnya 300px */
-    background:#1c1c1c;
-    border-radius:15px;
-    overflow:hidden;
-    transition:0.4s ease;
-    cursor:pointer;
-    box-shadow:0 10px 20px rgba(0,0,0,.4);
+.achievement-card {
+    width: 250px;
+    background: #1c1c1c;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,.4);
 }
 
 .achievement-card img {
-    width: 250px;
-    border-radius: 10px;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
 }
 
 .achievement-card img:hover {
