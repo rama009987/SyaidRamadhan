@@ -159,7 +159,37 @@ object-fit:cover;
 .project-content{
 padding:20px;
 }
+    
+.achievement-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
 
+.achievement-card{
+    width:220px; /* Sebelumnya 300px */
+    background:#1c1c1c;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s ease;
+    cursor:pointer;
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+}
+
+.achievement-card img{
+    width:100%;
+    height:150px; /* Sebelumnya 220px */
+    object-fit:cover;
+    transition:.4s ease;
+}
+
+.achievement-card h3{
+    color:#fff;
+    padding:12px;
+    font-size:16px;
+}
+    
 .contact{
 text-align:center;
 }
